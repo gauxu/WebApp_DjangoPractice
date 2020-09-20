@@ -3,8 +3,8 @@
 /.vscode
 __pycache__
 venv
+django_polls.egg-info
 db.sqlite3
-/static
 .DS_Store
 SourceTail_Test.*
 mysite.code-workspace
