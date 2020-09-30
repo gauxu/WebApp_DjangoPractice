@@ -126,4 +126,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# Fetch Django's project directory
+DJANGO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Fetch the project_root
+PROJECT_ROOT = os.path.dirname(DJANGO_ROOT)
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static') # /path/to/project_directory/static
